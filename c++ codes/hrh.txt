@@ -1,0 +1,323 @@
+#include<iostream>
+using namespace std;  //std = satndard name sapce 
+
+int main(){
+  
+  int amount1;
+  cin>>amount1;
+
+  intamount2;
+  cin>>amount2;
+
+  int sum =amount1+amount2;
+  cout<<"sum\n";
+  coout<<sum<<endl;   //<< endl == insertion  endline
+}
+ //////////////////////////////////////////////////////////////////////////////////
+int savings ;
+cin>>savings;
+
+if(saving>5000){
+    if(saving>10000){
+        cout<<"roadd trip\n";
+    }
+    else{
+        cout<<"shopping \n";
+    }
+
+}else if (savings>2000){
+    cout<<"drink\n";
+}else{
+    cout<<"friends\n";
+}
+
+//------------------max no------------
+
+int main(){
+    cin>>a>>b>>c;
+
+    if(a>b){
+        if(a>c){
+            cout<<a<<endl;
+        }
+        else{
+            cout<<c<<endl;
+        }
+    }
+    else{
+        if(b>c){
+            cout<<b<<endl;
+        }
+        else{
+            cout<<c<<endl;
+        }
+    }
+}
+
+
+//---------------odd even-------------
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    if(n%2==0){
+        cout<<"even"<<endl;
+        }
+    else{
+        cout<<"odd"<<endl;
+    }
+}
+
+//--------------- for(initializartion ; condition ; update){//body} ...........we will care about iteration we maintain counter variable which take care of iteration 
+
+//----------sum uptil n no-----------
+
+int main(){
+
+    int n ;
+    cin>>n;
+
+    int sum=0;
+    for(int counter; counter<=n ; counter++){
+        sum = sum+counter;
+    }
+    cout<<sum<<endl;
+    return 0;
+}
+
+//-----------------while(condition is true )..............we dont care about no of iteration .....first condition check then goes to body 
+
+int main(){
+   
+   int n;
+   cin>>n;
+
+   while(n>0){
+       cout<<n<<endl;
+       cin>>n;
+    }   
+   return 0;
+}
+
+//-----------do while---------it goes to body and then check condition atleast once body execute
+
+int main(){
+ 
+ int n;
+ cin>>n;
+ do{
+     cout<<n<<endl;
+     cin>>n;
+ }
+ while(n>0);
+    return 0;
+
+}
+
+//------------jumps in loops ==  break(terminate) and contineu(next iteration) to control flow of loops
+
+int main(){
+
+    int pocketmoney=3000;
+    for(int date=1; date<=30; date++){
+
+        if(date%2==0){
+            continue;
+        }
+        if (pocketmoney==0){
+            break;
+        }
+        cout<<"go out today"<<endl;
+        pocketmoney=pocketmoney -300;
+    }
+
+    return 0;
+    
+}
+
+//-------divisible by 3
+
+int main(){
+  
+     for(int i=0; i<100; i++)
+    {
+         if(i%3==0){
+             contineu;
+            }
+        cout<<i<<endl;    
+    }
+
+    return 0;  
+}
+
+//---------------prime no
+ int main(){
+
+     int n,i;
+     cin>>n;
+
+     for(i=2; i<n;i++){
+         if(n%i==o){}
+          cout<<"non prime"<<endl;
+          break;
+         }
+     }
+     
+     if(i==n){
+         cout<<"prime"<<endl;
+     }
+     
+     return0;
+ }
+
+// -----------prime no in given renge
+
+ int main(){
+
+    int a,b;
+    cin>>a>>b;
+
+    for(int num=a;num<=b;num++){
+        int i;
+        for(i=2;i<num;i++){
+            if(num%i==0){
+                break;
+            }
+        }
+        if(i==num){
+            cout<<num<<endl;
+        }
+    }
+     return0;
+ }
+
+
+
+//------------switch comparing values 
+
+int main()
+{
+    char button;
+    cout<<"input a character";
+    cin>>button;
+
+    if(button='a')
+    {
+        cout<<"hello"<<endl;
+    }
+    else if(button='b')
+    {
+        cout<<"hola"<<endl;
+    }
+    else if(button='c')
+    {
+        cout<<"namaste"<<endl;
+    }
+    else if(button='d')
+    {
+        cout<<"anyahaseyo"<<endl;
+    }
+    else {
+        cout<<"i am learning"<<endl;
+    }
+    
+     return 0;
+
+}
+   
+
+    //in switch case 
+
+    switch (button)
+    {
+        case 'a':
+                cout<<"hello"<<endl;++++++++++++++++++++++
+                break;
+         case 'b':
+                cout<<"hola"<<endl;
+                break;
+         case 'c':
+                cout<<"namaste"<<endl;
+                break;
+         case 'd':
+                cout<<"anyahaseyo"<<endl;
+                break;
+        default:
+             cout<<"learning"<<endl;
+                break;
+    
+    }-
+
+// rectangle
+int main(){
+
+    int row,col;
+    cin>>row>>col;
+
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=col ;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+}
+//hollow ractangle
+int main(){
+
+    int row,col;
+    cin>>row>>col;
+
+    for(int i=1; i<=row; i++){
+            for(int j=1; j<=col; j++){
+                if(i==1 || i==row|| j==1 || j==col){
+                    cout<<"*";
+                }
+                else if(){
+                    cout<<"*";
+                }
+                else{
+                    cout<<" ";
+                }
+            }
+        cout<<endl;
+}
+
+//inverted ahlf pyramid 
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    for(i=n;i>=1;i--){
+        for(int j=1;j<=i;j++){
+            cout<<"*";
+        }
+    cout<<endl;
+    }
+return 0;
+}
+
+// half pyramid after 180 degree rotation 
+
+int main(){
+
+    int n;
+    cin>>n;
+
+    for(i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            if (j<=n-i){
+                cout<<" ";
+            }
+            else{
+            cout<<"*";
+        }
+    cout<<endl;
+    }
+return 0;
+}
+
